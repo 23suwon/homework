@@ -59,7 +59,7 @@ int main() {
     printf("\n[대각선]\n");
 
     int sum1 = 0;
-    printf("대각선(↘): ");
+    printf("대각선1: ");
     for (int i = 0; i < N; i++) {
         printf("%4d", arr[i][i]);
         sum1 += arr[i][i];
@@ -67,7 +67,7 @@ int main() {
     printf(" → 합: %d\n", sum1);
 
     int sum2 = 0;
-    printf("대각선(↙): ");
+    printf("대각선2: ");
     for (int i = 0; i < N; i++) {
         printf("%4d", arr[i][N - 1 - i]);
         sum2 += arr[i][N - 1 - i];
