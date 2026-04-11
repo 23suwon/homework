@@ -23,7 +23,7 @@ int fibo(int n) {
 }
 
 int main() {
-	int n = fibo(10);
+	int n = fibo(50);
 	printf("%d\n", n);
 
 }*/
