@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 
 int fibo(int n) {
 	int f1 = 1;
@@ -26,4 +26,4 @@ int main() {
 	int n = fibo(50);
 	printf("%d\n", n);
 
-}*/
+}
