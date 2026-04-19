@@ -82,12 +82,9 @@ void printArrayList(arrayList* al) {
         printf("리스트가 비어 있습니다.\n");
         return;
     }
-    printf("┌─────────────────────────────\n");
-    printf("│ 위치\t│ 값\n");
-    printf("├─────────────────────────────\n");
+    printf("│ Location\t│ 값\n");
     for (int i = 0; i < al->size; i++) {
         printf("│  [%d]\t│ %d\n", i, al->data[i]);
     }
-    printf("└─────────────────────────────\n");
     printf("총 %d개의 항목\n", al->size);
 }
