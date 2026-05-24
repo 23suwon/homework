@@ -4,8 +4,6 @@
 
 #include "LinkedStack.h"
 
-#define MAX_URL 1024
-
 void printMenu() {
     printf("1. URL 추가\n");
     printf("2. URL 제거\n");
@@ -16,7 +14,7 @@ void printMenu() {
 int main() {
     LinkedStack* stack = createLinkedStack();
     int choice;
-    char url[MAX_URL];
+    char url[1024];
 
     while (1) {
         printMenu();
@@ -31,7 +29,7 @@ int main() {
         switch (choice) {
         case 1:
             printf("URL 입력: ");
-            if (fgets(url, MAX_URL, stdin) == NULL) break;
+            if (fgets(url, 1024, stdin) == NULL) break;
 
             if (url[0] == '\0') {
                 printf("URL을 입력해 주세요.\n");
